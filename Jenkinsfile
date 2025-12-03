@@ -19,7 +19,7 @@ pipeline {
         stage('Package Release') {
             steps {
                 sh 'echo "Generando artefacto release..."'
-                sh 'zip release.zip ./src/*'
+                sh 'zip zipFile: release.zip ./src/*'
             }
         }
         stage('Publish Artifact') {
