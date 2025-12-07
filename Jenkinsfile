@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'santiluis/jenkins-unzip:TAG'
+            image 'santiluis/jenkinsrelease:1.0.0 '
             args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
