@@ -16,6 +16,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Compilando aplicación..."'
+                sh 'docker version'
             }
         }
 
